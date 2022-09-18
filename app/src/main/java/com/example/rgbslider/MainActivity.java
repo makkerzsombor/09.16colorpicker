@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Slider red;
     private Slider green;
     private Slider blue;
+    private TextView rgbColor;
 
 
     @Override
@@ -33,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
                 String piros = String.format("%s",red.getValue());
                 redText.setText(piros);
                 layout.setBackgroundColor(Color.rgb((int)red.getValue(),(int)green.getValue(),(int)blue.getValue()));
+                String szinSzoveges = String.format("(%d, %d, %d)",(int)red.getValue(), (int)green.getValue(), (int)blue.getValue());
+                rgbColor.setText(szinSzoveges);
+                if ((int)red.getValue()+(int)green.getValue()+(int)blue.getValue()>450){
+                    rgbColor.setTextColor(Color.BLACK);
+                }else{
+                    rgbColor.setTextColor(Color.WHITE);
+                }
             }
 
             @Override
@@ -47,6 +55,14 @@ public class MainActivity extends AppCompatActivity {
                 String zold = String.format("%s",green.getValue());
                 greenText.setText(zold);
                 layout.setBackgroundColor(Color.rgb((int)red.getValue(),(int)green.getValue(),(int)blue.getValue()));
+                layout.setBackgroundColor(Color.rgb((int)red.getValue(),(int)green.getValue(),(int)blue.getValue()));
+                String szinSzoveges = String.format("(%d, %d, %d)",(int)red.getValue(), (int)green.getValue(), (int)blue.getValue());
+                rgbColor.setText(szinSzoveges);
+                if ((int)red.getValue()+(int)green.getValue()+(int)blue.getValue()>450){
+                    rgbColor.setTextColor(Color.BLACK);
+                }else{
+                    rgbColor.setTextColor(Color.WHITE);
+                }
             }
 
             @Override
@@ -61,6 +77,14 @@ public class MainActivity extends AppCompatActivity {
                 String kek = String.format("%s",blue.getValue());
                 blueText.setText(kek);
                 layout.setBackgroundColor(Color.rgb((int)red.getValue(),(int)green.getValue(),(int)blue.getValue()));
+                layout.setBackgroundColor(Color.rgb((int)red.getValue(),(int)green.getValue(),(int)blue.getValue()));
+                String szinSzoveges = String.format("(%d, %d, %d)",(int)red.getValue(), (int)green.getValue(), (int)blue.getValue());
+                rgbColor.setText(szinSzoveges);
+                if ((int)red.getValue()+(int)green.getValue()+(int)blue.getValue()>450){
+                    rgbColor.setTextColor(Color.BLACK);
+                }else{
+                    rgbColor.setTextColor(Color.WHITE);
+                }
             }
 
             @Override
@@ -79,6 +103,6 @@ public class MainActivity extends AppCompatActivity {
         red = findViewById(R.id.red);
         green = findViewById(R.id.green);
         blue = findViewById(R.id.blue);
-
+        rgbColor = findViewById(R.id.rgbColor);
     }
 }
