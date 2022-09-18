@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         red.addOnSliderTouchListener(new Slider.OnSliderTouchListener() {
             @Override
             public void onStartTrackingTouch(@NonNull Slider slider) {
-
+                //redText.setText((int) red.getValue());
             }
 
             @Override
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         green.addOnSliderTouchListener(new Slider.OnSliderTouchListener() {
             @Override
             public void onStartTrackingTouch(@NonNull Slider slider) {
-
+                //greenText.setText((int) green.getValue());
             }
 
             @Override
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         blue.addOnSliderTouchListener(new Slider.OnSliderTouchListener() {
             @Override
             public void onStartTrackingTouch(@NonNull Slider slider) {
-
+                //blueText.setText((int) blue.getValue());
             }
 
             @Override
