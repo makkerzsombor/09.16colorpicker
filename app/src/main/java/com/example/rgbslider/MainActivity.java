@@ -29,34 +29,40 @@ public class MainActivity extends AppCompatActivity {
         red.addOnSliderTouchListener(new Slider.OnSliderTouchListener() {
             @Override
             public void onStartTrackingTouch(@NonNull Slider slider) {
-                //redText.setText((int) red.getValue());
+                String piros = String.format("%s",red.getValue());
+                redText.setText(piros);
             }
 
             @Override
             public void onStopTrackingTouch(@NonNull Slider slider) {
-
+                String piros = String.format("%s",red.getValue());
+                redText.setText(piros);
             }
         });
         green.addOnSliderTouchListener(new Slider.OnSliderTouchListener() {
             @Override
             public void onStartTrackingTouch(@NonNull Slider slider) {
-                //greenText.setText((int) green.getValue());
+                String zold = String.format("%s",green.getValue());
+                greenText.setText(zold);
             }
 
             @Override
             public void onStopTrackingTouch(@NonNull Slider slider) {
-
+                String zold = String.format("%s",green.getValue());
+                greenText.setText(zold);
             }
         });
         blue.addOnSliderTouchListener(new Slider.OnSliderTouchListener() {
             @Override
             public void onStartTrackingTouch(@NonNull Slider slider) {
-                //blueText.setText((int) blue.getValue());
+                String kek = String.format("%s",blue.getValue());
+                blueText.setText(kek);
             }
 
             @Override
             public void onStopTrackingTouch(@NonNull Slider slider) {
-
+                String kek = String.format("%s",blue.getValue());
+                blueText.setText(kek);
             }
         });
     }

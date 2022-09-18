@@ -20,13 +20,14 @@
     <com.google.android.material.slider.Slider
         android:layout_width="400sp"
         android:layout_height="20sp"
-        android:valueFrom="0"
-        android:valueTo="255"
+        android:valueFrom="0.0"
+        android:valueTo="255.0"
         android:id="@+id/red"
         app:trackColor="@color/white"
         app:thumbColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/colorPicker"
+        android:stepSize="1"
         />
 
     <TextView
@@ -49,6 +50,7 @@
         app:thumbColor="@color/white"
         android:layout_below="@+id/redText"
         android:layout_centerHorizontal="true"
+        android:stepSize="1"
         />
 
     <TextView
@@ -71,6 +73,7 @@
         app:thumbColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/greenText"
+        android:stepSize="1"
         />
 
     <TextView
