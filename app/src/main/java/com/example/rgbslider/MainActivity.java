@@ -3,6 +3,7 @@ package com.example.rgbslider;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onStartTrackingTouch(@NonNull Slider slider) {
                 String piros = String.format("%s",red.getValue());
                 redText.setText(piros);
+                layout.setBackgroundColor(Color.rgb((int)red.getValue(),(int)green.getValue(),(int)blue.getValue()));
             }
 
             @Override
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void onStartTrackingTouch(@NonNull Slider slider) {
                 String zold = String.format("%s",green.getValue());
                 greenText.setText(zold);
+                layout.setBackgroundColor(Color.rgb((int)red.getValue(),(int)green.getValue(),(int)blue.getValue()));
             }
 
             @Override
@@ -57,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             public void onStartTrackingTouch(@NonNull Slider slider) {
                 String kek = String.format("%s",blue.getValue());
                 blueText.setText(kek);
+                layout.setBackgroundColor(Color.rgb((int)red.getValue(),(int)green.getValue(),(int)blue.getValue()));
             }
 
             @Override
