@@ -8,16 +8,6 @@
     android:background="#000"
     android:id="@+id/layout">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textSzin"
-        android:text="(0,0,0)"
-        android:layout_centerInParent="true"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        />
-
     <com.google.android.material.slider.Slider
         android:layout_width="400sp"
         android:layout_height="20sp"
@@ -80,6 +70,7 @@
         android:textSize="30sp"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/blue"/>
+        android:layout_below="@id/blue"
+        android:id="@+id/blueText"/>
 
 </RelativeLayout>
