@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.android.material.slider.Slider;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
     private TextView redText;
     private TextView greenText;
     private TextView blueText;
+    private Slider red;
+    private Slider green;
+    private Slider blue;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,5 +33,9 @@ public class MainActivity extends AppCompatActivity {
         redText = findViewById(R.id.redText);
         greenText = findViewById(R.id.greenText);
         blueText = findViewById(R.id.blueText);
+        red = findViewById(R.id.red);
+        green = findViewById(R.id.green);
+        blue = findViewById(R.id.blue);
+
     }
 }
